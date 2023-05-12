@@ -1,0 +1,23 @@
+<html lang = de>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Aufgabe 2
+        </title>
+    </head>
+    <body>
+        <form>
+            <input id = "feld" name = "feld" method = "GET">
+            <input type = "button" id = "btn" onclick = auslesen() value = "URL">
+        </form>
+        <script>
+            function auslesen () {
+                let adresse = document.getElementById("feld").value
+                if (!(adresse.includes('https://') || adresse.includes('http://'))) {
+                    adresse = "https://" + adresse;
+                }
+                location.href = adresse;
+            }
+        </script>
+    </body>
+</html>
