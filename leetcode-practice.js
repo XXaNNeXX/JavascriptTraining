@@ -49,4 +49,4 @@ function romanToInt(s) {
     return num;
 };
 
-romanToInt("MCIVIII");
+console.log(romanToInt("MCXLIII"));
